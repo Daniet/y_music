@@ -1,0 +1,16 @@
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+    always_put_required_named_parameters_first: false
+    avoid_classes_with_only_static_members: false
+    prefer_single_quotes: true
+    always_specify_types: true
+    lines_longer_than_80_chars: true
+    avoid_setters_without_getters: false
+    lowercase_with_underscores: false
+    sort_pub_dependencies: false
+analyzer:
+  exclude:
+    - lib/generated_plugin_registrant.dart
+    - test/_data/**
